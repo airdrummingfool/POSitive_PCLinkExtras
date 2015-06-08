@@ -1,0 +1,25 @@
+{
+    "name": "positive/pclink-extras",
+    "description": "Adds extra files/directories necessary for PCLink file uploads.",
+    "type": "magento-module",
+    "license": "AFL-3.0",
+    "authors": [
+        {
+            "name": "Tommy Goode",
+            "email": "tommy@irdequipment.com"
+        }
+    ],
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "extra":{
+        "map":[
+            ["pcindexer.php",               "pcindexer.php"],
+            ["sku2sku.php",                 "sku2sku.php"],
+            ["media/import/.keep",          "media/import/.keep"],
+            ["var/backups/.htaccess",       "var/backups/.htaccess"],
+            ["var/import/.keep",            "var/import/.keep"]
+        ]
+    }
+}
+
